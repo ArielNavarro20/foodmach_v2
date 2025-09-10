@@ -1,0 +1,48 @@
+:root{
+  --card:#fff;
+  --border:#e5e7eb;
+  --shadow:0 6px 18px rgba(0,0,0,.06);
+  --muted:#666;
+  --primary:#2a7ae4;
+}
+
+body{
+  margin:0;
+  font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+  background:#f7f7f9;
+  color:#222;
+}
+
+.container{ max-width:900px; margin:20px auto; padding:0 16px }
+h2{ margin:0 0 12px }
+
+form{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px;
+  box-shadow:var(--shadow);
+  margin-bottom:18px;
+}
+label{ display:block; margin:8px 0 4px }
+input[type="text"], textarea{
+  width:100%; padding:10px 12px; border:1px solid var(--border);
+  border-radius:10px; background:#fff; outline:none;
+}
+textarea{ min-height:120px; resize:vertical }
+button{ background:var(--primary); color:#fff; border:none; padding:10px 14px; border-radius:10px; font-weight:700; cursor:pointer }
+
+.cards{
+  display:grid; gap:14px;
+}
+@media (min-width: 760px){ .cards{ grid-template-columns:repeat(2,1fr) } }
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:14px;
+  box-shadow:var(--shadow);
+}
+.card p{ margin:.3rem 0 }
+.card small{ color:var(--muted) }

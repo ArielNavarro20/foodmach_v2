@@ -1,0 +1,21 @@
+:root{--bg:#f6f7f8;--card:#fff;--b:#ddd;--txt:#222;--muted:#666;--pri:#28a745}
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--txt)}
+.container{max-width:1000px;margin:20px auto;padding:0 16px}
+.navbar{background:#333;color:#fff;padding:10px 16px;display:flex;gap:14px;align-items:center}
+.navbar a,.navbar .link{color:#fff;text-decoration:none;font-weight:600}
+.navbar .link{background:none;border:none;cursor:pointer}
+.card{background:var(--card);border:1px solid var(--b);border-radius:8px;padding:14px;margin:12px 0}
+.w400{max-width:400px}
+label{display:block;margin-top:6px;font-weight:600}
+input,select,button,textarea{width:100%;padding:10px;margin-top:6px;border:1px solid var(--b);border-radius:6px}
+button{background:var(--pri);color:#fff;font-weight:700}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{border:1px solid var(--b);padding:8px;text-align:left}
+.table th{background:#444;color:#fff}
+.grid{display:grid;gap:12px}
+@media(min-width:720px){.grid{grid-template-columns:repeat(2,1fr)}}
+.muted{color:var(--muted)}
+.flash{background:#e8f5e9;border:1px solid #a5d6a7;padding:10px;border-radius:6px;margin:8px 0}
+.boleta .detalle{margin:6px 0}
+.btn-imprimir{margin-top:10px}
+.section{background:var(--card);border:1px solid var(--b);border-radius:8px;padding:10px;margin:16px 0}
